@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='css/base.css') }}">
     {% block head %}{% endblock %}
 </head>
-<body>
-<nav class="navbar-default">
-{#  <div class="container-fluid">#}
-  <div class="container">
+<body class="main_body">
+{#<nav class="navbar-default">#}
+  <div class="container-fluid">
+{#  <div class="container">#}
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -38,7 +38,7 @@
         <li class="active">
             <a href="{{ url_for('index') }}">首页 <span class="sr-only">(current)</span></a>
         </li>
-        <li><a href="#">发布问答</a></li>
+        <li><a href="{{ url_for('chart') }}">创建图表</a></li>
 {#        <li class="dropdown">#}
 {#          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>#}
 {#          <ul class="dropdown-menu">#}
@@ -56,11 +56,11 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="请输入关键字">
         </div>
-        <button type="submit" class="btn btn-default">查找</button>
+        <button type="submit" class="btn btn-default">查找图表</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ url_for('login') }}">登录</a></li>
-        <li><a href="#">注册</a></li>
+        <li><a href="{{ url_for('register') }}">注册</a></li>
 {#        <li class="dropdown">#}
 {#          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>#}
 {#          <ul class="dropdown-menu">#}

@@ -1,0 +1,23 @@
+.nav_logo{
+    width: 50px;
+    margin-top: 0px;
+    padding: 0px;
+}
+.navbar-brand,.navbar_logo_frame{
+    width: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    background-color:#ffffff;
+    margin: 10px auto;
+    width: 970px;
+}
+.main_body{
+    background-color:rgb(220,220,220);
+}
+
+.container,.container-fluid{
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
