@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}登录{% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block main %}
+
+<div class="loginForm" style="margin-top:30px;">
+
+            <div class="loginhead">
+                		<div class="dib line"></div>
+	                	<div class="dib loginHeadText" id="login_tenant">企业登录</div>
+	                	<div class="dib line"></div>
+            </div><div>
+            	<div class="form-group helpPwdParent">
+            		<span class="help-block helpPwd hide"></span>
+            	</div>
+                <div class="form-group" style="margin-top:3px;">
+                    <label for="username" class="sr-only">用户名</label>
+                    	<input type="text" class="form-control" id="usernameShow" placeholder="企业标识" placeholder-user="手机号" placeholder-tenant="企业标识">
+                    <input type="text" class="form-control hide" id="username" placeholder="">
+                </div>
+                <div class="form-group has-feedback">
+                    <label for="pwd" class="sr-only">密码</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="密码">
+                    <span class="block-help form-control-feedback glyphicon glyphicon-eye-open" id="myEye" style="margin-top: 2px;">
+                    </span>
+                </div>
+
+                <div class="checkbox" style="margin-bottom:0px;height:40px;">
+                    <label class="rememberUser" style="color:#666">
+                        <input type="checkbox" id="rmbUser" class="s_option" style="position: relative;"> 记住我
+                    </label>
+                </div>
+                <button class="btn loginBtn" style="margin-top:0px;margin-bottom:10px;">登录</button>
+
+	            	<div class="tc tryMe">
+	                    <span>还没有帐号？</span><a href="{{ url_for('register') }}">立即注册</a>
+	                </div>
+            </div>
+        </div>
+
+{% endblock %}
