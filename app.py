@@ -1,11 +1,11 @@
 # coding=utf-8
-# encoding：utf-8
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash, redirect
+from forms import LoginForm
 
 import config
 
 app = Flask(__name__)
-app.config.from_object(config)
+app.config.from_object('config')
 
 
 @app.route('/')
@@ -15,10 +15,15 @@ def index():
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
-    if request.method == 'GET':
-        return render_template('login.html')
-    else:
-        pass
+    #    if request.method == 'GET':
+    #        return render_template('login.html')
+    #    else:
+    #        pass
+    # def login():
+    form = LoginForm()
+    return render_template('login.html',
+                           title='Sign In',
+                           form=form)
 
 
 @app.route('/test/')
@@ -46,5 +51,5 @@ def register():
 
 if __name__ == '__main__':
     app.run(
-        port=7777,
-        debug=True)
+        debug=True,
+        port=7777)

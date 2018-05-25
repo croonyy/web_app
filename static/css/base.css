@@ -11,13 +11,16 @@
 .main{
     background-color:#ffffff;
     margin: 10px auto;
-    width: 970px;
-}
-.main_body{
-    background-color:rgb(220,220,220);
+    width: 1080px;
 }
 
-.container,.container-fluid{
-    background-color: #ffffff;
+
+.nav_body{
+    background-color: #1dffcc;
     margin-bottom: 10px;
 }
+
+body{
+    background-color: #dcdcdc;
+}
+
