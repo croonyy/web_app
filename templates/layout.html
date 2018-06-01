@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>iview example</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/iview.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/vue.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/iview.min.js') }}"></script>
+</head>
+<body>
+    <i-Row>
+        <i-Col span="12">col-12</i-Col>
+        <i-Col span="12">col-12</i-Col>
+    </i-Row>
+    <br>
+    <i-Row>
+        <i-Col span="8">col-8</i-Col>
+        <i-Col span="8">col-8</i-Col>
+        <i-Col span="8">col-8</i-Col>
+    </i-Row>
+    <br>
+    <i-Row>
+        <i-Col span="6">col-6</i-Col>
+        <i-Col span="6">col-6</i-Col>
+        <i-Col span="6">col-6</i-Col>
+        <i-Col span="6">col-6</i-Col>
+    </i-Row>
+    <div class="ivu-col ivu-col-span-6 demo-col light">6：25%</div>
+<script>
+    export default {
+
+    }
+</script>
+
+</body>
+</html>
